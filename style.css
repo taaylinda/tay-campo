@@ -1,0 +1,84 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    background-image: url('campo-cidade.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding-top: 50px; /* Para ajustar o conteúdo abaixo do cabeçalho */
+}
+
+header {
+    background-color: rgba(0, 100, 0, 0.7); /* Verde escuro com transparência */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Para garantir que fique acima dos outros elementos */
+}
+
+nav {
+    background-color: rgba(0, 100, 0, 0.8); /* Verde escuro mais sólido */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 50px; /* Ajuste para deixar abaixo do cabeçalho */
+    z-index: 1000; /* Também acima dos outros elementos */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 120px; /* Espaço para evitar sobreposição com cabeçalho */
+}
+
+.container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 100, 0, 0.7); /* Verde escuro com transparência */
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*
