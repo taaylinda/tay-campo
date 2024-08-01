@@ -1,0 +1,116 @@
+<!-- Página Principal (pagina-principal.html) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exportação de Produtos do Campo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf7e5; /* verde claro */
+            color: #333; /* cor do texto */
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4a7729; /* verde mais escuro */
+            text-align: center;
+        }
+        .produto {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .produto:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .produto img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .produto h2 {
+            color: #4a7729; /* verde mais escuro */
+        }
+        .produto p {
+            text-align: justify;
+        }
+        .tab {
+            display: none;
+        }
+        .active-tab {
+            display: block;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #7ad699;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Exportação de Produtos do Campo para a Cidade</h1>
+
+    <button class="button" onclick="openTab('cidade')"><strong>CIDADE</strong></button>
+    <button class="button" onclick="openTab('campo')"><strong>CAMPO</strong></button>
+
+    <div id="cidade" class="tab">
+        <h2>Exportação para a cidade: Rio de Janeiro</h2>
+        <p>A exportação de soja, milho e café para a cidade do Rio de Janeiro é parte crucial da economia agrícola do Brasil. Esses produtos são enviados para a cidade para abastecer o mercado local e também para exportação internacional através do Porto do Rio de Janeiro. A cidade é um importante centro de distribuição e consumo desses produtos agrícolas, contribuindo significativamente para a economia local e regional.</p>
+        <img src="https://tirolesa.bondinho.com.br/wp-content/uploads/2023/12/header-blog-historia-do-rio-de-janeiro-tirolesa.webp" alt="Produto 1">
+        <P>A exportação de produtos para o Rio de Janeiro envolve um processo logístico crucial de transporte de produtos agrícolas, como soja, milho e café, das áreas de produção rural para a cidade.</P>
+    </div>
+
+    <div id="campo" class="tab active-tab">
+        <div class="produto">
+            <h2>A Soja</h2>
+            <p>A exportação de soja do campo para a cidade representa um elo crucial na cadeia de produção e abastecimento de alimentos global. A soja, cultivada principalmente em áreas rurais, é um dos principais produtos agrícolas do mundo, com sua exportação sendo essencial para suprir demandas industriais e alimentares nas áreas urbanas.</p>
+            <img src="https://www.brfingredients.com/assets/images/posts/ingredientes-de-soja-aplicacoes-na-industria.webp" alt="Produto 1">
+        </div>
+
+        <div class="produto">
+            <h2>O milho</h2>
+            <p>O milho exportação de milho é um componente significativo do comércio agrícola global, desempenhando um papel crucial na economia de muitos países produtores. O milho é um dos cereais mais cultivados e consumidos em todo o mundo, com uma vasta gama de aplicações que vão desde alimentos e rações até biocombustíveis e ingredientes industriais.</p>
+            <img src="https://blogpolomedico.com.br/wp-content/uploads/2024/06/milho-verde-festa-junina.jpg" alt="Produto 2">
+        </div>
+
+        <div class="produto">
+            <h2>O café</h2>
+            <p>A exportação do café do campo para a cidade é um processo meticuloso que começa nas fazendas, onde o café é cultivado e colhido. Após a colheita, os grãos são processados nas próprias fazendas ou em centros de beneficiamento próximos, onde passam por etapas como secagem, descascamento e classificação.</p>
+            <img src="https://s2-g1.glbimg.com/-Z7jzeeTSTa_x9hPyY39LZc92Z8=/0x0:1920x1260/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/A/T/oy8W6bS1mJNh2WhTrc7A/xicara-cafe.jpg" alt="Produto 3">
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var tabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active-tab");
+            }
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+</div>
+
+</body>
+</html>

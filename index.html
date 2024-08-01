@@ -19,127 +19,42 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center; /* centraliza conteúdo */
         }
         h1 {
             color: #4a7729; /* verde mais escuro */
-            text-align: center;
         }
-        .produto {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-        .produto:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .produto img {
-            max-width: 100%;
-            border-radius: 4px;
-        }
-        .produto h2 {
-            color: #4a7729; /* verde mais escuro */
-        }
-        .produto p {
+        p {
             text-align: justify;
+        }
+        .container img {
+            max-width: 100%; /* imagem responsiva */
+            height: auto; /* mantém proporções */
+            border-radius: 8px; /* bordas arredondadas */
+            margin-bottom: 20px; /* espaço abaixo da imagem */
+        }
+        .botao-entrar {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7ad699;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .botao-entrar:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Exportação de Produtos do Campo para a Cidade</h1>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Modelo de Site com Abas</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                padding: 20px;
-            }
-            .tab {
-                display: none;
-            }
-            .active-tab {
-                display: block;
-            }
-            .button {
-                padding: 10px 20px;
-                background-color: #7ad699;
-                color: rgb(0, 0, 0);
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                margin-right: 10px;
-            }
-            .button:hover {
-                background-color: #0056b3;
-            }
-        </style>
-    </head>
-    <body>
-        <button class="button" onclick="openTab('cidade')"><strong>CIDADE</strong></button>
-        <button class="button" onclick="openTab('campo')"><strong>CAMPO</strong></button>
-    
-        <div id="cidade" class="tab">
-            <h2>Exportação para a cidade: Rio de Janeiro</h2>
-            <p>A exportação de soja, milho e café para a cidade do Rio de Janeiro é parte crucial da economia agrícola do Brasil. Esses produtos são enviados para a cidade para abastecer o mercado local e também para exportação internacional através do Porto do Rio de Janeiro. A cidade é um importante centro de distribuição e consumo desses produtos agrícolas, contribuindo significativamente para a economia local e regional.
-        
-            </p>
-                <img src="https://tirolesa.bondinho.com.br/wp-content/uploads/2023/12/header-blog-historia-do-rio-de-janeiro-tirolesa.webp" alt="Produto 1">
-            </p>
-        
-        </div>
-    
-        <div id="campo" class="tab active-tab">
-            <div class="produto">
-                <h2>A Soja</h2>
-                <p>A exportação de soja do campo para a cidade representa um elo crucial na cadeia de produção e abastecimento de alimentos global. A soja, cultivada principalmente em áreas rurais, é um dos principais produtos agrícolas do mundo, com sua exportação sendo essencial para suprir demandas industriais e alimentares nas áreas urbanas.
-                <p>No campo, a soja é cultivada extensivamente, passando por várias etapas de produção, incluindo o plantio, cuidado com as plantas e colheita. Após a colheita, a soja é transportada para pontos de processamento ou diretamente para portos, onde é exportada para diferentes partes do mundo.
-        
-                </p>
-                </p>
-                    <img src="https://www.brfingredients.com/assets/images/posts/ingredientes-de-soja-aplicacoes-na-industria.webp" alt="Produto 1">
-                </p>
-            </div>
-        
-           
-                <p> <div class="produto">
-                <h2>O milho</h2>
-                <p>O milho exportação de milho é um componente significativo do comércio agrícola global, desempenhando um papel crucial na economia de muitos países produtores. O milho é um dos cereais mais cultivados e consumidos em todo o mundo, com uma vasta gama de aplicações que vão desde alimentos e rações até biocombustíveis e ingredientes industriais.
-                <p>Uma vez preparados, os lotes de café são transportados para centros urbanos ou portos por meio de uma rede complexa de logística, que pode envolver caminhões, trens ou transporte marítimo, dependendo da distância e da localização das fazendas. Nas cidades, o café é recebido em armazéns especializados, onde é novamente inspecionado quanto à qualidade e preparado para a exportação internacional
-                <img src="https://blogpolomedico.com.br/wp-content/uploads/2024/06/milho-verde-festa-junina.jpg" alt="Produto 2">
-            </div>
-        
-            <div class="produto">
-                <h2>O cafe</h2>
-                <p>A exportação do café do campo para a cidade é um processo meticuloso que começa nas fazendas, onde o café é cultivado e colhido. Após a colheita, os grãos são processados nas próprias fazendas ou em centros de beneficiamento próximos, onde passam por etapas como secagem, descascamento e classificação.</p>
-                <p>Uma vez preparados, os lotes de café são transportados para centros urbanos ou portos por meio de uma rede complexa de logística, que pode envolver caminhões, trens ou transporte marítimo, dependendo da distância e da localização das fazendas. Nas cidades, o café é recebido em armazéns especializados, onde é novamente inspecionado quanto à qualidade e preparado para a exportação internacional
-        
-                </p><img src="https://s2-g1.glbimg.com/-Z7jzeeTSTa_x9hPyY39LZc92Z8=/0x0:1920x1260/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/A/T/oy8W6bS1mJNh2WhTrc7A/xicara-cafe.jpg" alt="Produto 3">
-            </div>
-        </div>
-        
-        </body>
-        </html>
-        
-        <div class="container">
-        </div>
-    
-        <script>
-            function openTab(tabName) {
-                var tabs = document.getElementsByClassName("tab");
-                for (var i = 0; i < tabs.length; i++) {
-                    tabs[i].classList.remove("active-tab");
-                }
-                document.getElementById(tabName).classList.add("active-tab");
-                
-            }
-        </script>
-    </body>
-    </html>
+    <h1>Exportação de Produtos do Campo</h1>
+    <p>A exportação do campo para a cidade envolve o transporte e comercialização de produtos agrícolas cultivados em áreas rurais para centros urbanos. Esse processo atende à demanda urbana por alimentos e matérias-primas agrícolas, garantindo o abastecimento das cidades e contribuindo para a economia global através do comércio internacional.</p>
+    <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/colheitadesoja.jpg" alt="Colheita de Soja">
+    <a class="botao-entrar" href="pagina-principal.html"><strong>MAIS SOBRE</strong></a>
+</div>
+
+</body>
+</html>
